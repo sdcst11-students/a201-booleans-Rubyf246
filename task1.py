@@ -19,3 +19,7 @@ The number is 100
 Enter a number: 102
 The number is larger than 100
 """
+a = int(input ("Give me a number, then press enter."))
+if a >= 100:
+  print("the number is larger than 100")
+

@@ -11,3 +11,12 @@
 # Outputs:
 # "the number is even"
 # "the number is odd"
+
+a = int(input ("Give me a number, then press enter."))
+b=a%2
+if b == 0:
+  print("the number is even")
+if b== 1:
+  print("the number is odd")
+if a == 0:
+  print("the number is zero")
