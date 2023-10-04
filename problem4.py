@@ -33,3 +33,21 @@ that is an obtuse triangle
 
 
 """
+s1 = float(input ("Give me one side, then press enter."))
+s2 = float(input( "Give me second side, then press enter:"))
+s3 = float(input( "Give me third side, then press enter:"))
+
+list = [s1,s2,s3]
+list.sort()
+A = list[0]
+B = list[1]
+C = list[2]
+from math import acos, degrees
+degree = degrees(acos((A * A + B * B - C * C)/(2.0 * A * B)))
+print (degree)
+if degree > 90:
+    print("obtuse triangle")
+elif degree==90:
+    print("right triangle")
+else:
+    print("acute triangle")

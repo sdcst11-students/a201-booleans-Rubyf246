@@ -29,3 +29,23 @@ Enter c: 8
 the equation can not be factored
 
 """
+a = int(input ("Give me number A, then press enter."))
+b = int(input( "Give me number B, then press enter:"))
+c = int(input( "Give me number C, then press enter:"))
+y= b**2 -( 4*a*c )
+import math
+
+def perfsqr(num):
+    if num < 0:
+        return False
+
+    s = math.isqrt(num)
+
+    return s * s  
+z = perfsqr(y)
+if y == z:
+        print("the equation can be factored")
+else:
+        print("The equation can not be factored")
+ 
+ 
